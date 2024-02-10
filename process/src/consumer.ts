@@ -70,7 +70,7 @@ class Consumer extends EventEmitter {
   ) {
     super();
 
-    this._BLOCK_TIME = 5e3; // 5 sec
+    this._BLOCK_TIME = 3e3; // 5 sec
     this._BATCH_SIZE = 10; // 10 message
     this._STREAM_SIZE = 1000; // maximum of 1000 messages
     this._IS_ALIVE = true;
@@ -135,7 +135,7 @@ class Consumer extends EventEmitter {
 
   private async cleanup() {
     try {
-      await this._redis.del(this._consumer);
+      await this._redis.del(this._stream);
     } catch (error) {
       this.emit(Events.ERROR, "Error: " + error?.message);
     }

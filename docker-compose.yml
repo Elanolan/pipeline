@@ -2,14 +2,14 @@ version: "3"
 
 services:
   influx:
-    image: influxdb:latest
+    image: docker.arvancloud.ir/influxdb:latest
     container_name: influxdb
 
     ports:
       - 8086:8086
 
   redis:
-    image: redis:latest
+    image: docker.arvancloud.ir/redis:latest
     container_name: redis
 
     ports:
