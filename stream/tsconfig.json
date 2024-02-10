@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "allowUnreachableCode":false,
+    "allowSyntheticDefaultImports":false,
+    "composite": true,
+    // "listFiles": true,
+  }
+}
