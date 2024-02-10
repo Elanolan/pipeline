@@ -10,5 +10,6 @@
     "allowSyntheticDefaultImports":false,
     "composite": true,
     // "listFiles": true,
+    "resolveJsonModule": true,
   }
 }
