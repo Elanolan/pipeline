@@ -1,0 +1,1178 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ETHUSDT",
+    "timeframe": "9s2",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BNBUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SOLUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XRPUSDT",
+    "timeframe": "9s2",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ADAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "DOTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MATICUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LINKUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TRXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SHIBUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LTCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BCHUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "UNIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ICPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ATOMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "NEARUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XLMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "OPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ETCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XMRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "HBARUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "IMXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "APTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "INJUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FILUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LDOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "VETUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "STXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ARBUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ALGOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "RUNEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "EGLDUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TIAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GRTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "RNDRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "QNTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "1000SATSUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ORDIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MKRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "THETAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FLOWUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FTMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MINAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SNXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SANDUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "AXSUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SEIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FTTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XTZUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MANAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CAKEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "KAVAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "NEOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "EOSUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ROSEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "IOTAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LUNCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BONKUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GALAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SUIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "OSMOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "WOOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "KLAYUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XECUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CHZUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FXSUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CRVUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ASTRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ARUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CFXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "RPLUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "APEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FETUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BLURUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TRBUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LUNAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TWTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ZECUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GNOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "COMPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "NEXOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "1INCHUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GMTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GMXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "IOTXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GASUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "PAXGUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ZILUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LRCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CELOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ELFUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "DASHUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "KSMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "HOTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "AGIXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SKLUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ENJUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SCUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BATUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ILVUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GLMRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "QTUMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "WLDUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "XEMUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "CVXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FLOKIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SFPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "RAYUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "WAVESUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "AUDIOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "JASMYUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SUPERUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TFUELUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ENSUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ZRXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "KDAUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "DCRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "OCEANUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "RVNUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SUSHIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ANKRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MASKUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "JSTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "STORJUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "YFIUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ONEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "LPTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ANTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ICXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BANDUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "WAXPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "TUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "SXPUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "JOEUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BALUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "BICOUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "GALUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "ONTUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "FLUXUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "PYRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  },
+  {
+    "symbol": "POWRUSDT",
+    "timeframe": "1h",
+    "status": "UNLOCK",
+    "broker": "BINANCE",
+    "no": 1707901200000,
+    "nc": 1707904799999
+  }
+]
