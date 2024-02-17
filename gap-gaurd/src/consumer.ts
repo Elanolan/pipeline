@@ -9,23 +9,57 @@ connect({
     const sd = StringCodec();
     const streamManager = await nats.jetstreamManager({});
     await streamManager.consumers.add("candles", {
-      name: "1h.consumer",
+      name: "1h:consumer",
       ack_policy: AckPolicy.None,
       deliver_policy: DeliverPolicy.All,
-      filter_subjects: ["1h.single"],
-      max_batch: 10,
+      filter_subjects: ["1h.candle"],
+    });
+
+    await streamManager.consumers.add("candles", {
+      name: "4h:consumer",
+      ack_policy: AckPolicy.None,
+      deliver_policy: DeliverPolicy.All,
+      filter_subjects: ["4h.candle"],
+    });
+
+    await streamManager.consumers.add("candles", {
+      name: "1d:consumer",
+      ack_policy: AckPolicy.None,
+      deliver_policy: DeliverPolicy.All,
+      filter_subjects: ["1d.candle"],
     });
 
     const streamClient = nats.jetstream({});
-    streamClient.consumers.get("1h.consumer").then((consumer) => {
-      console.log(consumer);
 
-      consumer.consume({
-        callback: (r) => {
-          console.log(sd.decode(r.data));
-        },
+    streamClient.consumers
+      .get("candles", "1h:consumer")
+      .then(async (consumer) => {
+        await consumer.consume({
+          callback: (r) => {
+            console.log(sd.decode(r.data));
+          },
+        });
       });
-    });
+
+    streamClient.consumers
+      .get("candles", "4h:consumer")
+      .then(async (consumer) => {
+        await consumer.consume({
+          callback: (r) => {
+            console.log(sd.decode(r.data));
+          },
+        });
+      });
+
+    streamClient.consumers
+      .get("candles", "1d:consumer")
+      .then(async (consumer) => {
+        await consumer.consume({
+          callback: (r) => {
+            console.log(sd.decode(r.data));
+          },
+        });
+      });
   })
   .catch((err) => {
     console.log(err);

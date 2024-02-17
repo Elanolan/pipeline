@@ -22,6 +22,7 @@ services:
   nats:
     image: docker.arvancloud.ir/nats:latest
     container_name: nats
+    command: -js
     ports:
       - 8222:8222
       - 4222:4222

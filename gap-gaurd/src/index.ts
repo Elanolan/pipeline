@@ -4,27 +4,40 @@ connect({
   port: 4222,
   reconnect: true,
   maxReconnectAttempts: 10,
-  debug: true,
-  timeout: 30000,
-})
-  .then(async (nats) => {
-    const sd = StringCodec();
-    const streamManager = await nats.jetstreamManager({});
-    console.log("here");
+}).then(async (nats) => {
+  console.log("connect");
 
-    await streamManager.streams.add({
-      name: "candles",
-      max_age: 1.5e10,
-      subjects: ["1h.*", "4h.*", "1d.*"],
-    });
-    console.log("add stream");
+  const sd = StringCodec();
+  const streamManager = await nats.jetstreamManager({});
+  console.log("manager created");
 
-    const streamClient = nats.jetstream({});
+  console.log(await streamManager.streams.info("candles"));
+
+  // await streamManager.streams.delete("candles");
+  // await streamManager.streams.add({
+  //   name: "candles",
+  //   max_age: 1.5e10,
+  //   subjects: ["1h.single", "4h.single", "1d.single"],
+  // });
+  // console.log("add stream");
+
+  const streamClient = nats.jetstream({});
+  setInterval(async () => {
     await streamClient.publish(
       "1h.single",
-      sd.encode(`{"max":1200,"min":900}`)
+      sd.encode(`{"max":1200,"min":900,"tf":"1h"}`)
     );
-  })
-  .catch((err) => {
-    console.log("timeout! ", err?.message);
-  });
+
+    await streamClient.publish(
+      "4h.single",
+      sd.encode(`{"max":1200,"min":900,"tf":"4h"}`)
+    );
+
+    await streamClient.publish(
+      "1d.single",
+      sd.encode(`{"max":1200,"min":900,"tf":"1d"}`)
+    );
+  }, 10000);
+  // .catch((err) => {
+  //   console.log("timeout! ", err);
+});

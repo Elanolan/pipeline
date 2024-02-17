@@ -13,6 +13,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@influxdata/influxdb-client": "^1.33.2",
     "nats": "^2.19.0",
     "undici-types": "^5.26.5"
   },
