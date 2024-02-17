@@ -54,13 +54,13 @@ export class BinanceBroker extends Broker {
             timeframe: t,
           }));
 
-          this.emit(Events.DATA, data);
+          this.emit(Events.DATA, data[0]);
           resolve(true);
         });
       });
 
       request.on("error", (err) => {
-        logger.error(err?.message);
+        console.log(err);
         return reject(false);
       });
 

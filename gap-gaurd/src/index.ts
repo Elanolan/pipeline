@@ -30,7 +30,8 @@ connect({
 
     await streamClient.publish(
       "4h.single",
-      sd.encode(`{"max":1200,"min":900,"tf":"4h"}`)
+      sd.encode(`{"max":1200,"min":900,"tf":"4h"}`),
+      {}
     );
 
     await streamClient.publish(

@@ -4,7 +4,6 @@ import "module-alias/register";
 import dotenv from "dotenv";
 dotenv.config();
 
-import * as redis from "redis";
 import mongoose from "mongoose";
 import * as nats from "nats";
 import logger from "@shared/log";
@@ -13,15 +12,6 @@ import schedule from "node-schedule";
 import { Timeframes } from "@shared/constants/timeframes";
 
 async function bootstrap() {
-  /** Redis */
-  const redisServer = redis.createClient({
-    url: process.env.REDIS_URL,
-    disableOfflineQueue: false,
-    isolationPoolOptions: { max: 10, min: 5 },
-  });
-  await redisServer.connect();
-  logger.info("Connect to redis");
-
   /** Mongodb */
   await mongoose.connect(process.env.MONGO_URL, {
     maxPoolSize: 20,
@@ -38,14 +28,11 @@ async function bootstrap() {
   logger.info("Connect to nats");
 
   schedule
-    .scheduleJob(
-      "0 * * * *",
-      worker(redisServer, natsServer, Timeframes.OneHour)
-    )
+    .scheduleJob("0 * * * *", worker(natsServer, Timeframes.OneHour))
     .invoke();
 
   /** << subscribes >> */
-  natsServer.subscribe("stream.ack", {
+  natsServer.subscribe("ack", {
     callback: async (err, mess) => {
       let sc = nats.StringCodec();
       logger.success("Ack recived for stream " + sc.decode(mess.data));
