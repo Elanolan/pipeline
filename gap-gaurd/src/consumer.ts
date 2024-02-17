@@ -1,4 +1,4 @@
-import { connect, StringCodec } from "nats";
+import { AckPolicy, connect, DeliverPolicy, StringCodec } from "nats";
 
 connect({
   port: 4222,
@@ -7,12 +7,25 @@ connect({
 })
   .then(async (nats) => {
     const sd = StringCodec();
-    nats.publish("stream.listen", sd.encode("hello"));
+    const streamManager = await nats.jetstreamManager({});
+    await streamManager.consumers.add("candles", {
+      name: "1h.consumer",
+      ack_policy: AckPolicy.None,
+      deliver_policy: DeliverPolicy.All,
+      filter_subjects: ["1h.single"],
+      max_batch: 10,
+    });
 
-    const sub = nats.subscribe("ack");
-    for await (let m of sub) {
-      console.log(sd.decode(m.data));
-    }
+    const streamClient = nats.jetstream({});
+    streamClient.consumers.get("1h.consumer").then((consumer) => {
+      console.log(consumer);
+
+      consumer.consume({
+        callback: (r) => {
+          console.log(sd.decode(r.data));
+        },
+      });
+    });
   })
   .catch((err) => {
     console.log(err);

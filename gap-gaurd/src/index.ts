@@ -4,17 +4,27 @@ connect({
   port: 4222,
   reconnect: true,
   maxReconnectAttempts: 10,
+  debug: true,
+  timeout: 30000,
 })
   .then(async (nats) => {
     const sd = StringCodec();
+    const streamManager = await nats.jetstreamManager({});
+    console.log("here");
 
-    const sub = nats.subscribe("stream.listen", {
-      callback: (err, msg) => {
-        console.log(sd.decode(msg.data));
-        nats.publish("ack", sd.encode("acknolllllll"));
-      },
+    await streamManager.streams.add({
+      name: "candles",
+      max_age: 1.5e10,
+      subjects: ["1h.*", "4h.*", "1d.*"],
     });
+    console.log("add stream");
+
+    const streamClient = nats.jetstream({});
+    await streamClient.publish(
+      "1h.single",
+      sd.encode(`{"max":1200,"min":900}`)
+    );
   })
   .catch((err) => {
-    console.log(err);
+    console.log("timeout! ", err?.message);
   });
