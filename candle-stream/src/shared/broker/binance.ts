@@ -94,9 +94,9 @@ export class BinanceBroker extends Broker {
       return;
     }
 
+    this._IS_OPEN = false;
     await Promise.allSettled(this._request_pool);
     this._agent.destroy();
-    this._IS_OPEN = false;
   }
 
   private parse(response: any[][]) {

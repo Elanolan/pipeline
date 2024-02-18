@@ -1,23 +1,9 @@
-import * as redis from "redis";
 import logger from "./shared/log";
-import { Consumer } from "./db/redis";
 import { KlineRepository } from "./db/influxdb";
 import { InfluxDB } from "@influxdata/influxdb-client";
 import * as nats from "nats";
 
 async function bootstrap() {
-  /** Redis */
-  const redisServer = redis.createClient({
-    url: process.env.REDIS_URL,
-    disableOfflineQueue: false,
-    isolationPoolOptions: {
-      max: 10,
-      min: 5,
-    },
-  });
-  await redisServer.connect();
-  logger.info("Connect to redis");
-
   /** InfluxDB */
   const ORG_ID = process.env.INFLUX_ORGID;
   const BUCKET = process.env.INFLUX_BUCKET;
@@ -33,64 +19,88 @@ async function bootstrap() {
   });
 
   /** Nats */
+  const NATS_HOST = process.env.NATS_HOST;
+  const NATS_PORT = +process.env.NATS_PORT;
   const natsServer = await nats.connect({
-    port: 4222,
+    servers: `${NATS_HOST}:${NATS_PORT}`,
     reconnect: true,
     maxReconnectAttempts: 10,
   });
   logger.info("Connect to nats");
 
-  const sc = nats.StringCodec();
-  let consumers = new Map<string, Consumer>();
+  /** Add Consumers and Streams */
+  const streamManager = await natsServer.jetstreamManager({});
+  await streamManager.streams.delete("binance-spot:stream");
+
+  await streamManager.streams.add({
+    name: "binance-spot:stream",
+    max_age: 5e10,
+    subjects: ["stream-candle.1h", "stream-candle.4h", "stream-candle.1d"],
+    no_ack: false,
+    storage: nats.StorageType.Memory,
+    max_msgs: -1,
+  });
+
+  await streamManager.consumers.add("binance-spot:stream", {
+    name: "c:stream-candle:1h",
+    ack_policy: nats.AckPolicy.Explicit,
+    filter_subjects: ["stream-candle.1h"],
+  });
 
   /** Consumers */
-  natsServer.subscribe("stream.listen", {
-    callback: async (err, message) => {
-      const { stream } = JSON.parse(sc.decode(message.data));
+  const jeststream = natsServer.jetstream({});
+  const WriteAPIsMap = new Map<string, KlineRepository>();
+  const CountMap = new Map<string, number>();
 
-      let consumer = new Consumer(redisServer, stream);
+  jeststream.consumers
+    .get("binance-spot:stream", "c:stream-candle:1h")
+    .then((consumer) => {
+      const sc = nats.StringCodec();
+      consumer.consume({
+        callback: async (message) => {
+          const stream = message.info.stream;
+
+          // write data to influx buffer
+          const data = JSON.parse(sc.decode(message.data));
+          WriteAPIsMap.get(stream).write([data]);
+
+          // ack the message
+          message.ack();
+          let count = CountMap.get(stream);
+          if (count <= 1) {
+            // save data to influx
+            await WriteAPIsMap.get(stream).end();
+            WriteAPIsMap.delete(stream);
+            logger.success("Save data successfully");
+          } else {
+            CountMap.set(message.info.stream, count - 1);
+          }
+        },
+      });
+    });
+
+  /** Subscribers */
+  natsServer.subscribe("binance-spot.stream.start", {
+    callback: async (err, mess) => {
+      console.log("Starting...");
+
+      const sc = nats.StringCodec();
+      const { stream, count } = JSON.parse(sc.decode(mess.data));
+
       const kline = new KlineRepository(
         influxClient.getWriteApi(ORG_ID, BUCKET, "ms")
       );
 
-      consumer.on("start", () => {
-        logger.info(`start consuming stream ${stream}`);
-      });
-
-      consumer.on("data", (buf: Buffer) => {
-        console.log(buf);
-        const data = JSON.parse(buf.toString());
-        kline.write(data);
-      });
-
-      consumer.on("end", async () => {
-        await kline.end();
-      });
-
-      consumer.on("error", (err) => {
-        logger.error(err);
-      });
-
       kline.on("end", async () => {
-        natsServer.publish("stream.ack", sc.encode(JSON.stringify({ stream })));
-        logger.info(`end consuming stream ${stream}`);
+        natsServer.publish("binance-spot.stream.ack", sc.encode("ACK!"));
       });
 
       kline.on("error", (err) => {
         logger.error(err);
       });
 
-      await consumer.start();
-      consumers.set(stream, consumer);
-    },
-  });
-
-  natsServer.subscribe("stream.end", {
-    callback: async (err, mess) => {
-      const { stream } = JSON.parse(sc.decode(mess.data));
-      if (!consumers.has(stream)) return;
-      consumers.get(stream).end();
-      consumers.delete(stream);
+      CountMap.set(stream, count);
+      WriteAPIsMap.set(stream, kline);
     },
   });
 

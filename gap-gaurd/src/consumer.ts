@@ -1,4 +1,10 @@
-import { AckPolicy, connect, DeliverPolicy, StringCodec } from "nats";
+import {
+  AckPolicy,
+  connect,
+  DeliverPolicy,
+  StorageType,
+  StringCodec,
+} from "nats";
 
 connect({
   port: 4222,
@@ -10,9 +16,11 @@ connect({
     const streamManager = await nats.jetstreamManager({});
 
     await streamManager.streams.add({
-      name: "candles",
+      name: "binance-spot:stream",
       max_age: 1.5e10,
-      subjects: ["1h.single", "4h.single", "1d.single"],
+      subjects: ["stream-candle.1h", "stream-candle.4h", "stream-candle.1d"],
+      no_ack: true,
+      storage: StorageType.Memory,
     });
     console.log("add stream");
 
@@ -23,28 +31,24 @@ connect({
       filter_subjects: ["1h.single"],
     });
 
-    // await streamManager.consumers.add("candles", {
-    //   name: "4h:consumer",
-    //   ack_policy: AckPolicy.None,
-    //   deliver_policy: DeliverPolicy.All,
-    //   filter_subjects: ["4h.candle"],
-    // });
-
-    // await streamManager.consumers.add("candles", {
-    //   name: "1d:consumer",
-    //   ack_policy: AckPolicy.None,
-    //   deliver_policy: DeliverPolicy.All,
-    //   filter_subjects: ["1d.candle"],
-    // });
-
     const streamClient = nats.jetstream({});
 
     streamClient.consumers
       .get("candles", "1h:consumer")
       .then(async (consumer) => {
+        let i = 0;
         await consumer.consume({
           callback: (r) => {
-            console.log(sd.decode(r.data));
+            i++;
+            console.log(i);
+
+            if (i == 145) {
+              nats.publish(
+                "binance-spot.stream.ack",
+                sd.encode("ACKKKKKKKK!!!")
+              );
+              console.log("ack");
+            }
           },
         });
       });
